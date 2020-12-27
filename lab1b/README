@@ -1,0 +1,40 @@
+
+README
+
+Contents: lab1b-client.c, lab1b-server.c, Makefile, README, my.key
+
+lab1b
+
+This program creates a multi-process telnet-like client and server terminal where data is communicated over a TCP socket connection.
+
+USAGE
+
+	lab1b-client -[e] -[l] filename -[p] portno
+	lab1b-server -[e] -[p] portno
+
+-p : indicates connection port number
+-l : logs all communication between client and server into specified filename
+-e : encrypts all communication between client and server
+
+
+lab1b-client.c
+This contains the source code for the client program.
+
+lab1b-server.c
+This contains the source code for the server program.
+
+Makefile
+This allows the user to compile the program, create a distributable, or remove the program.
+
+Makefile Options
+Using make on its own will compile both lab1b-client.c and lab1b-client.c.
+  dist: using make dist will create a tarball containing the lab1b program files
+  clean: using make clean will remove all files previously created using this makefile and return it to its untared state
+
+my.key
+This contains the encryption key used by the client and server programs.
+	
+Citation
+I used the following websites for examples and guides to help with this project.
+https://www.gnu.org/
+https://linux.die.net/
